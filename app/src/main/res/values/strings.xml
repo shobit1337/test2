@@ -1,0 +1,53 @@
+<resources>
+
+    <string name="app_name">CraftsBeer</string>
+
+    <string name="empty"></string>
+
+    <string name="search_for_beers">Search for Beers</string>
+
+    <string name="no_internet_title">No Internet Connection</string>
+
+    <string name="no_internet_message">Please check your internet connection</string>
+
+    <string name="ok">OK</string>
+
+    <string name="add_to_cart">Add to Cart</string>
+
+    <string name="product_alcohol_content">ABV: %s</string>
+
+    <string name="product_bitter_units">IBU: %s</string>
+
+    <string name="product_ounces">Ounces: %f</string>
+
+    <string name="added_to_cart">Added to Cart</string>
+
+    <string name="filter">Filter</string>
+
+    <string name="sort">Sort</string>
+
+    <string name="sort_by">Sort By</string>
+
+    <string name="filter_by">Filter By</string>
+
+    <string name="clear">Clear</string>
+
+    <string name="beer_style">Beer Style</string>
+
+    <string name="alcohol_content_ascending">Alcohol Content Ascending</string>
+
+    <string name="alcohol_content_descending">Alcohol Content Descending</string>
+
+    <string name="processing_products_list">Please wait while we are processing products for you...</string>
+
+    <string name="processing_products_list_done">All ready now you can order your favourite beers...</string>
+
+    <string name="no_product_with_the_name">No Product found with the name</string>
+
+    <string name="no_filter_results">No Search Results found for you filter</string>
+
+    <!--Content Descriptions-->
+
+    <string name="cd_voice_search">Voice Search</string>
+
+</resources>

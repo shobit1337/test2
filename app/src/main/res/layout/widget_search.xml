@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_56dp"
+    android:background="@color/blue_primary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dimens_8dp"
+        app:cardCornerRadius="@dimen/dimens_1dp"
+        app:elevation="@dimen/dimens_4dp">
+
+        <RelativeLayout
+            android:id="@+id/search_layout_relative"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/search_auto_complete_text_view"
+                android:drawableLeft="@drawable/search_icon"
+                android:background="@null"
+                android:paddingLeft="@dimen/dimens_8dp"
+                android:focusable="true"
+                android:dropDownAnchor="@+id/search_layout_relative"
+                android:drawablePadding="@dimen/dimens_12dp"
+                android:dropDownHeight="wrap_content"
+                android:dropDownHorizontalOffset="0dp"
+                android:dropDownVerticalOffset="0dp"
+                android:ellipsize="end"
+                android:hint="@string/search_for_beers"
+                android:imeOptions="actionSearch"
+                android:inputType="textFilter"
+                android:lines="1"
+                android:maxLines="1"
+                android:popupBackground="@android:color/transparent"
+                android:singleLine="true"
+                android:textColorHint="@color/search_text_hint"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/shop_close_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="8dp"
+                android:src="@drawable/close_text_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/shop_voice_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listChoiceBackgroundIndicator"
+                android:contentDescription="@string/cd_voice_search"
+                android:paddingRight="@dimen/dimens_8dp"
+                android:src="@drawable/voice" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

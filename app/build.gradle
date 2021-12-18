@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.android.innovatorlabs.craftsbeer"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Android Components
+    implementation deps.appCompat.appCompat
+    implementation deps.appCompat.recycler_view
+    implementation deps.appCompat.card_view
+    implementation deps.design.design_support
+
+    // LifeCycle
+    implementation deps.lifecycle.runtime
+    implementation deps.lifecycle.extensions
+    annotationProcessor deps.lifecycle.compiler
+
+    // Room
+    implementation deps.room.runtime
+    annotationProcessor deps.room.compiler
+
+    //EventBus
+    implementation deps.eventBus.event_bus
+
+    //Network
+    implementation deps.network.volley
+
+    //JUnit
+    testImplementation deps.junit.junit
+
+    //Espresso
+    androidTestImplementation deps.espresso.espresso_test_runner
+    androidTestImplementation deps.espresso.espresso_core
+}

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/blue_primary</item>
+
+        <item name="colorPrimaryDark">@color/app_theme_touch_state</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/AnimationTheme.Window</item>
+
+    </style>
+
+    <style name="AnimationTheme.Window" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_to_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/static_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/static_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_left_to_right</item>
+    </style>
+
+</resources>

@@ -1,0 +1,70 @@
+ext.deps = [:]
+
+def deps = [:]
+
+def versions = [:]
+versions.android_gradle_plugin_version = "3.1.0"
+versions.android_app_compat_version = "27.1.1"
+versions.junit_version = "4.12"
+versions.espresso_core_version = "3.0.2"
+versions.espresso_test_runner_version = "1.0.2"
+versions.lifecycle = "1.1.1"
+versions.room = "1.1.0"
+versions.volley = "1.1.0"
+versions.event_bus = "3.1.1"
+versions.design_library = "27.1.1"
+
+def gradle = [:]
+gradle.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin_version"
+deps.gradle = gradle
+
+def appCompat = [:]
+appCompat.appCompat = "com.android.support:appcompat-v7:$versions.android_app_compat_version"
+appCompat.recycler_view = "com.android.support:recyclerview-v7:$versions.android_app_compat_version"
+appCompat.card_view = "com.android.support:cardview-v7:$versions.android_app_compat_version"
+deps.appCompat = appCompat
+
+def design = [:]
+design.design_support = "com.android.support:design:$versions.design_library"
+deps.design = design
+
+def lifecycle = [:]
+lifecycle.runtime = "android.arch.lifecycle:runtime:$versions.lifecycle"
+lifecycle.extensions = "android.arch.lifecycle:extensions:$versions.lifecycle"
+lifecycle.compiler = "android.arch.lifecycle:compiler:$versions.lifecycle"
+deps.lifecycle = lifecycle
+
+def eventBus = [:]
+eventBus.event_bus = "org.greenrobot:eventbus:$versions.event_bus"
+deps.eventBus = eventBus
+
+def network = [:]
+network.volley = "com.android.volley:volley:$versions.volley"
+deps.network = network
+
+def room = [:]
+room.runtime = "android.arch.persistence.room:runtime:$versions.room"
+room.compiler = "android.arch.persistence.room:compiler:$versions.room"
+deps.room = room
+
+def junit = [:]
+junit.junit = "junit:junit:$versions.junit_version"
+deps.junit = junit
+
+def espresso = [:]
+espresso.espresso_core = "com.android.support.test.espresso:espresso-core:$versions.espresso_core_version"
+espresso.espresso_test_runner = "com.android.support.test:runner:$versions.espresso_test_runner_version"
+deps.espresso = espresso
+
+ext.deps = deps
+
+def addRepos(RepositoryHandler repositoryHandler){
+    repositoryHandler.google()
+    repositoryHandler.jcenter()
+}
+
+ext.addRepos = this.&addRepos
+
+
+
+

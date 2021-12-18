@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#B9B9B9</color>
+
+    <color name="colorPrimaryDark">#047cf4</color>
+
+    <color name="colorAccent">#247bd2</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="blue_primary">#489CD4</color>
+
+    <color name="app_theme_touch_state">#5DA7D9</color>
+
+    <color name="search_text_hint">#BCBCBC</color>
+
+    <color name="app_background_color">#F4F0EE</color>
+
+    <color name="app_divider_color">#CFCFCF</color>
+
+    <color name="splash_background_color">#AE6C60</color>
+
+</resources>

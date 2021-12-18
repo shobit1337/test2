@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.android.innovatorlabs.craftsbeer.db.entity.ProductEntity"/>
+
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_8dp"
+            android:elevation="@dimen/dimens_4dp"
+            app:cardCornerRadius="@dimen/dimens_4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/app_background_color"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimens_120dp"
+                    android:layout_height="@dimen/dimens_130dp">
+
+                    <ImageView
+                        android:id="@+id/product_image"
+                        android:layout_centerInParent="true"
+                        android:layout_width="@dimen/dimens_80dp"
+                        android:layout_height="@dimen/dimens_80dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimens_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:text="@{product.name}"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:text="@{product.style}"
+                        android:layout_marginTop="@dimen/dimens_10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dimens_10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:textSize="@dimen/text_size_10sp"
+                            android:text="@{@string/product_alcohol_content(product.alcoholContent)}"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/dimens_4dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_10sp"
+                            android:text="@{@string/product_bitter_units(product.bitterUnits)}"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/dimens_4dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dimens_12dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_size_10sp"
+                            android:text="@{@string/product_ounces(product.ounces)}"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/dimens_4dp"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue_primary"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/add_to_cart"
+                                android:textSize="@dimen/text_size_12sp"
+                                android:text="@string/add_to_cart"
+                                android:layout_width="match_parent"
+                                android:background="@color/blue_primary"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="@dimen/dimens_4dp"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/app_divider_color"
+            android:layout_height="@dimen/dimens_1dp"/>
+
+    </RelativeLayout>
+
+</layout>
+

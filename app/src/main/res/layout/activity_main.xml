@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+
+        <variable
+            name="isLoading"
+            type="boolean"/>
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/toolbar"
+                    android:background="@color/blue_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:paddingLeft="@dimen/dimens_8dp"
+                        android:paddingTop="@dimen/dimens_4dp"
+                        android:paddingRight="@dimen/dimens_8dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/text_size_18sp" />
+
+                        <com.android.innovatorlabs.craftsbeer.ui.widget.CartBadgeMenu
+                            android:id="@+id/cart_icon"
+                            android:padding="@dimen/dimens_4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <fragment
+                        android:id="@+id/search_widget_fragment"
+                        class="com.android.innovatorlabs.craftsbeer.ui.fragments.SearchWidgetFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_56dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/product_list_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:visibleGone="@{!isLoading}"/>
+
+                    <LinearLayout
+                        android:id="@+id/error_layout"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/dimens_120dp"
+                        android:layout_height="@dimen/dimens_120dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_100dp"
+                            android:layout_height="@dimen/dimens_100dp" />
+
+                        <TextView
+                            android:id="@+id/error_text"
+                            android:layout_marginTop="@dimen/dimens_16dp"
+                            android:background="@color/search_text_hint"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/product_list_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:visibleGone="@{isLoading}"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.android.innovatorlabs.craftsbeer.ui.widget.OptionsWidget
+                android:id="@+id/options_widget"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sort_bottom_sheet"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+        <FrameLayout
+            android:id="@+id/filter_bottom_sheet"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:layout_behavior="@string/bottom_sheet_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
+

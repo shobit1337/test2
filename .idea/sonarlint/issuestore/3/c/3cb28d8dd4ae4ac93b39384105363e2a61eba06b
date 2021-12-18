@@ -1,0 +1,7 @@
+
+ysquid:S1450"XRemove the "closeIcon" field and declare it as a local variable in the relevant methods.(Õ½¨¸ÿÿÿÿÿ8ÁíÉŠÅ,
+Šsquid:S1450"iRemove the "customAutoCompleteTextView" field and declare it as a local variable in the relevant methods.(ÏÚıÿÿÿÿ8º«ÇŠÅ,
+ysquid:S1450"XRemove the "voiceIcon" field and declare it as a local variable in the relevant methods.(˜§·³ÿÿÿÿÿ8ã§ËŠÅ,
+_squid:S1068">Remove this unused "customAutoCompleteTextView" private field.(ÏÚıÿÿÿÿ8«ÎÃŠÅ,
+Nsquid:S1068"-Remove this unused "voiceIcon" private field.(˜§·³ÿÿÿÿÿ8«âÊŠÅ,
+Nsquid:S1068"-Remove this unused "closeIcon" private field.(Õ½¨¸ÿÿÿÿÿ8ÁíÉŠÅ,

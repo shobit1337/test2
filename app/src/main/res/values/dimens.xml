@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimension-->
+    <dimen name="dimens_1dp">1dp</dimen>
+
+    <dimen name="dimens_2dp">2dp</dimen>
+
+    <dimen name="dimens_4dp">4dp</dimen>
+
+    <dimen name="dimens_8dp">8dp</dimen>
+
+    <dimen name="dimens_10dp">10dp</dimen>
+
+    <dimen name="dimens_12dp">12dp</dimen>
+
+    <dimen name="dimens_16dp">16dp</dimen>
+
+    <dimen name="dimens_20dp">20dp</dimen>
+
+    <dimen name="dimens_24dp">24dp</dimen>
+
+    <dimen name="dimens_30dp">30dp</dimen>
+
+    <dimen name="dimens_35dp">35dp</dimen>
+
+    <dimen name="dimens_40dp">40dp</dimen>
+
+    <dimen name="dimens_56dp">56dp</dimen>
+
+    <dimen name="dimens_80dp">80dp</dimen>
+
+    <dimen name="dimens_100dp">100dp</dimen>
+
+    <dimen name="dimens_112dp">112dp</dimen>
+
+    <dimen name="dimens_120dp">120dp</dimen>
+
+    <dimen name="dimens_130dp">130dp</dimen>
+
+    <dimen name="dimens_150dp">150dp</dimen>
+
+    <dimen name="dimens_200dp">200dp</dimen>
+
+    <!--Text Sizes-->
+
+    <dimen name="text_size_10sp">10sp</dimen>
+
+    <dimen name="text_size_12sp">12sp</dimen>
+
+    <dimen name="text_size_14sp">14sp</dimen>
+
+    <dimen name="text_size_16sp">16sp</dimen>
+
+    <dimen name="text_size_18sp">18sp</dimen>
+
+    <dimen name="text_size_24sp">24sp</dimen>
+
+</resources>

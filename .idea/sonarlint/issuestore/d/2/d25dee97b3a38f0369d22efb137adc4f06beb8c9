@@ -1,0 +1,4 @@
+
+Hsquid:S1068"'Remove this unused "TAG" private field.(„è‰›ıÿÿÿÿ8¡¬†Å,
+Zsquid:S2168"9Remove this dangerous instance of double-checked locking.(šÃåøÿÿÿÿ8Ûè™ûÄ,
+ssquid:S3008"XRename this field "DATABASE_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÙ’I8¾—¡ûÄ,

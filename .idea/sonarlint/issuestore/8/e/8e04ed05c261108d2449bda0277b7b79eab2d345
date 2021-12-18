@@ -1,0 +1,7 @@
+
+[squid:S1118":Add a private constructor to hide the implicit public one.(´–š±ûÿÿÿÿ8ª™ÈşÄ,
+ƒsquid:UselessImportCheck"URemove this unused import 'com.android.innovatorlabs.craftsbeer.constants.Constants'.(·´¼ëøÿÿÿÿ8ì›êƒÅ,
+\squid:UselessImportCheck"4Remove this unused import 'android.app.Application'.(¢¶ÿI8´àƒÅ,
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ıÇ™ƒ8¢·˜€Å,
+ysquid:UselessImportCheck"QRemove this unused import 'com.android.innovatorlabs.craftsbeer.BaseApplication'.(ÕşÉ{8×ãƒÅ,
+Ksquid:S1172"/Remove this unused method parameter "activity".(ıÇ™ƒ8×ãƒÅ,
